@@ -103,3 +103,21 @@ In order to complete this assignment, you must do the following:
 ### Grading
 
 This assignment will be graded via peer assessment.
+
+makeCacheMatrix <- function(mat) { 
+    
+mat_final <- matrix(,nrow=ncol(mat), nco=nrow(mat))
+ 
+for ( p in 1:nrow(mat)){
+for (q in 1:ncol(mat)){
+mat_final[q,p] <- mat[p,q]
+
+}
+}
+
+mat_final
+}
+
+
+
+
